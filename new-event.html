@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/new-event.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">NEW EVENT</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="smoothScroll intro">Intro</a></li>
+                    <li><a href="#overview" class="smoothScroll">Overview</a></li>
+                    <li><a href="#speaker" class="smoothScroll">Speaker</a></li>
+                    <li><a href="#venu" class="smoothScroll">Venue</a></li>
+                    <li><a href="#register" class="smoothScroll">Register</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h4>I MAKE DESIGN EASY</h4>
+                <h1>web design confrence</h1>
+                <a href="#" class="btn learn-more">learn more</a>
+                <a href="#" class="btn register-now">Register now</a>
+            </div>
+        </section>
+
+        <section id="overview">        
+            <div class="overview-content">
+                 <h3>New Event is a fully responsive one-page template for events, conferences or workshops.</h3>
+                     <p>This is a Bootstrap v3.3.6 layout that is responsive and mobile friendly. You may download and modify this template for your website. Please tell your friends about templatemo.</p>
+                     <p>Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+             </div>
+                             
+             <div class="image">
+                 <img src="images/overview-img.jpg" class="img-responsive" alt="Overview">
+             </div>
+         </section>
+
+         <section id="speaker">
+            <div class="speaker-content">
+                <h2>Creative Speaker</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, odio.</p>
+            </div>
+            <div class="speaker-container">
+                <div class="box">
+                    <img src="./images/speakers-img1.jpg" alt="">
+                    <h5>julia</h5>
+                    <h6>ui designer</h6>
+                </div>
+                <div class="box">
+                    <img src="./images/speakers-img2.jpg" alt="">
+                    <h5>max</h5>
+                    <h6>ux designer</h6>
+                </div>
+                <div class="box">
+                    <img src="./images/speakers-img3.jpg" alt="">
+                    <h5>emma</h5>
+                    <h6>creative director</h6>
+                </div>
+                <div class="box">
+                    <img src="./images/speakers-img4.jpg" alt="">
+                    <h5>jackson</h5>
+                    <h6>developer</h6>
+                </div>
+            </div>
+        </section>
+
+        <section id="venu">
+            <img src="./images/venue-bg.jpg" alt="">
+            <div class="venu-content">
+                <h2 class="stag">venue</h2>
+                <p class="stag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente numquam nemo distinctio obcaecati! Unde cupiditate quas libero? Minima facere dicta inventore veritatis provident sed corporis nobis commodi assumenda sint.</p>
+                <h4 class="stag">new event <br>120 Market street, suit 110 <br>san francisco, CA 10110 <br>Tel:010-020-0120</h4>
+            </div>
+            <p>copyright &copy; 2020 your company | Design: <span> imakedesigneasy </span></p>
+        </section>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+
+    <script>
+
+        gsap.from(".overview-content",{
+            scrollTrigger: ".overview-content",
+            x:-200,
+            duration:1.5,
+            opacity:0,
+            scrub:1
+        });
+
+        gsap.from(".image",{
+            scrollTrigger: ".image",
+            x:200,
+            duration:1.5,
+            opacity:0,
+            scrub:1
+        });
+
+        gsap.from(".speaker-content",{
+            scrollTrigger: ".speaker-content",
+            y:200,
+            duration:1.5,
+            opacity:0,
+            scrub:1
+        });
+
+        gsap.from(".box",{
+            scrollTrigger: ".box",
+            y:200,
+            duration:1.5,
+            opacity:0,
+            delay:0.5,
+            stagger:0.1,
+            scrub:1
+        });
+
+        gsap.from(".stag",{
+            scrollTrigger: ".stag",
+            y:200,
+            duration:1.5,
+            opacity:0,
+            delay:0.5,
+            stagger:0.2,
+            scrub:1
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
